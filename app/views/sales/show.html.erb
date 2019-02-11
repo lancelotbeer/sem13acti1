@@ -1,0 +1,9 @@
+<ul>
+  <li> cod <%= @sale.cod %> </li>
+  <li> tax <%= @sale.tax %> </li>
+  <li> value <%= @sale.value %> </li>
+  <li> total <%= @sale.total %> </li>
+  <li> creado hace: <%= time_ago_in_words @sale.created_at %> </li>
+  <li> <%= link_to "Borrar", @sale, method: :delete %> </li>
+  <li> <%= link_to "Volver al form", sales_new_path %> </li>
+</ul>

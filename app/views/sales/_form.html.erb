@@ -1,0 +1,29 @@
+<%= form_with model: @sale, local: true do |f| %>
+<ul>
+  <li>
+  <%= f.label :cod %>
+  <%= f.number_field :cod %>
+  </li>
+  <li>
+  <%= f.label :detail %>
+  <%= f.text_area :detail %>
+  </li>
+  <li>
+  <%= f.label :category %>
+  <%= f.number_field :category %>
+  </li>
+  <li>
+  <%= f.label :value %>
+  <%= f.number_field :value  %>
+  </li>
+  <li>
+  <%= f.label :discount %>
+  <%= f.number_field :discount  %>
+  </li>
+  <li>
+  <%= f.label :tax %>
+  <%= f.check_box :tax  %>
+  </li>
+  <%= f.submit "Enviar" %>
+</ul>
+<% end %>
